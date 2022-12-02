@@ -3,6 +3,7 @@
 
 #include <set>
 #include <string>
+#include <queue>
 
 /**
  * @brief Returns the list of all legal words in the provided dictionary
@@ -19,5 +20,16 @@ std::set<std::string> wordle(
     const std::string& in,
     const std::string& floating,
     const std::set<std::string>& dict);
+
+void wordleHelper(
+  const std::string& in,
+  const std::queue<char>& floating,
+  const std::set<std::string>& dict,
+  std::set<std::string>*words,
+  unsigned int lettersLeft,
+  unsigned int position);
+
+// bool isValid(std::string& word, std::set<std::string>& dict);
+// bool containsFloat(const std::string& word, const std::string& floating);
 
 #endif

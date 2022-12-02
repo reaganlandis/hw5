@@ -28,5 +28,9 @@ int main(int argc, char* argv[])
     for(auto s : answers){
         cout << s << endl;
     }
+    // //me:
+    // for(std::set<std::string>::iterator it = answers.begin(); it != answers.end(); ++it){
+    //   std::cout << *it<< std::endl;
+    // }
     return 0;
 }
